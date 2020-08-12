@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /CheckinApp/
+    RewriteRule ^.*$ index.php [END]
+
+</IfModule>
