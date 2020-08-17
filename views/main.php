@@ -1,5 +1,5 @@
-<?php include($_SERVER['DOCUMENT_ROOT'] . '/CheckinApp/views/partials/header.php');
-$config = require($_SERVER['DOCUMENT_ROOT'] . '/CheckinApp/config.php'); ?>
+<?php include('views/partials/header.php');
+$config = require('config.php'); ?>
 
 <body>
 
@@ -164,4 +164,4 @@ $config = require($_SERVER['DOCUMENT_ROOT'] . '/CheckinApp/config.php'); ?>
 
 
 
-        <?php include($_SERVER['DOCUMENT_ROOT'] . '/CheckinApp/views/partials/footer.php'); ?>
+        <?php include('views/partials/footer.php'); ?>

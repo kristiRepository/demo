@@ -10,9 +10,9 @@ class GuestController
 
     public function __construct()
     {
-        require($_SERVER['DOCUMENT_ROOT'] . '/CheckinApp/database/Connection.php');
-        require($_SERVER['DOCUMENT_ROOT'] . '/CheckinApp/database/Query.php');
-        $config = require($_SERVER['DOCUMENT_ROOT'] . '/CheckinApp/config.php');
+        require('database/Connection.php');
+        require('database/Query.php');
+        $config = require('config.php');
         $this->conn = Connection::create($config);
         $this->query = new Query($this->conn);
     }
@@ -61,7 +61,7 @@ class GuestController
         }
 
 
-        require($_SERVER['DOCUMENT_ROOT'] . '/CheckinApp/views/main.php');
+        require('views/main.php');
     }
 
 
@@ -100,6 +100,6 @@ class GuestController
 
 
 
-        require($_SERVER['DOCUMENT_ROOT'] . '/CheckinApp/views/main.php');
+        require('views/main.php');
     }
 }

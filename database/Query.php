@@ -19,6 +19,7 @@ class Query
         $query = $this->pdo->prepare("UPDATE guests SET checked=1 WHERE id={$id}");
         $query->execute();
     }
+    
 
     public function create_query($search_box=""){
         $query = "SELECT * FROM guests WHERE checked IS NULL ";

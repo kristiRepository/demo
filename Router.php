@@ -1,5 +1,5 @@
 <?php
-require($_SERVER['DOCUMENT_ROOT'] . '/CheckinApp/Controllers/GuestController.php');
+require('Controllers/GuestController.php');
 
 class Router
 {

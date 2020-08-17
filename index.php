@@ -2,8 +2,8 @@
 
 <?php
 
-require($_SERVER['DOCUMENT_ROOT'] . '/CheckinApp/Request.php');
-require($_SERVER['DOCUMENT_ROOT'] . '/CheckinApp/Router.php');
+require('Request.php');
+require('Router.php');
 
 
 

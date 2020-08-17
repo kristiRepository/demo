@@ -6,7 +6,7 @@ class Request
 
     public static function uri()
     {
-        return trim(substr(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH), 12), '/');
+        return trim(str_replace(basename(getcwd()),"",parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH)),'/');
     }
 
     public static function method()
